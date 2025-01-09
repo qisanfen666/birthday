@@ -4,7 +4,7 @@ from URL import url_manager
 import re
 
 root="http://www.douban.com/top250"
-pattern=r'^http://www.crazyant.net/\d+.html$'
+#pattern=r'^http://www.crazyant.net/\d+.html$'
 
 urlmanager=url_manager()
 
@@ -33,29 +33,3 @@ while urlmanager.has_url():
         print("success:%s,%s"%(url,title))
 
 fout.close()
-
-
-
-
-
-
-
-
-# r.encoding="utf-8"
-
-# html_cont=r.text
-
-# soup=BeautifulSoup(html_cont,"html.parser")
-
-# h2_node=soup.find_all("h2",class_="entry-title")
-
-# for h2 in h2_node:
-#     links=h2.find_all("a")
-#     for link in links:
-#        print(link.name,link["href"],link.get_text())
-
-
-
-
-# img=soup.find("img")
-# print(img["src"])
