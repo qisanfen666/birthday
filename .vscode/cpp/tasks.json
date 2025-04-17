@@ -8,7 +8,7 @@
 			"args": [
 				"-fdiagnostics-color=always",
 				"-g",
-				"${file}",
+				"${file}","solution.h",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
 			],
@@ -28,7 +28,7 @@
 			"args": [
 				"-fdiagnostics-color=always",
 				"-g",
-				"${file}",
+				"${file}","solution.h",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
 			],
